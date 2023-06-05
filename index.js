@@ -29,7 +29,8 @@ const server = http.createServer((req,res) => {
         const output = tempOverview.replace('{%PRODUCTCARDS%}', cardsHtml);
         res.end(output);
     }
-
+    
+    
     //PRODUCT
     else if (pathname == '/product'){
         const product = dataObject[query.id];
